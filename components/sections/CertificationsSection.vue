@@ -5,8 +5,8 @@
       <h2 class="font-display text-[clamp(2.5rem,5vw,4rem)] tracking-[0.04em] leading-none text-text">
         IBM <span class="text-accent">Certified</span>
       </h2>
-      <div class="flex w-full md:w-auto justify-center md:justify-start items-center gap-[0.6rem] bg-bg border border-border px-4 py-2 rounded-[2px] font-mono text-[0.7rem] text-muted2 tracking-[0.06em]">
-        <span class="text-accent">IBM</span> Front-End Developer · Coursera · <span class="text-accent">2025</span>
+      <div class="flex flex-col md:flex-row w-full md:w-auto justify-center md:justify-start items-center gap-[0.6rem] bg-bg border border-border px-4 py-2 rounded-[2px] font-mono text-[0.7rem] text-muted2 tracking-[0.06em]">
+        <span class="text-accent">IBM</span> Front-End Developer <span class="hidden md:inline">·</span> Coursera <span class="hidden md:inline">·</span> <span class="text-accent">2025</span>
       </div>
     </div>
 
