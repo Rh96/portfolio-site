@@ -15,7 +15,6 @@ export const experience: ExperienceItem[] = [
     project: 'ProCredit Mobile Banking App',
     location: '📍 Skopje, North Macedonia',
     role: 'React Native Developer',
-    current: true,
     bullets: [
       'Developed and maintained mobile applications using React Native for both Android and iOS.',
       'Built reusable UI components and implemented responsive mobile interfaces.',
@@ -28,13 +27,13 @@ export const experience: ExperienceItem[] = [
     company: 'PlayerCoach',
     project: 'Sports club management & booking platform',
     location: '📍 Toronto, Canada (Remote)',
-    role: 'Frontend Developer (Vue JS)',
+    role: 'Frontend Developer (React JS / TypeScript)',
     bullets: [
       'Developed responsive, pixel-perfect frontend features including advanced form validation.',
       'Maintained and updated packages with npm to ensure stability and compatibility.',
       'Integrated new features in collaboration with design and backend teams.',
       'Connected frontend with RESTful APIs for seamless data flow and UX.',
-      'Managed global application state using Vuex; implemented real-time updates with Socket.io.',
+      'Managed global application state using Redux; implemented real-time updates with Socket.io.',
       'Customized FullCalendar for court and practice booking systems.',
     ],
   },

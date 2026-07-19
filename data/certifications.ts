@@ -10,3 +10,17 @@ export const certifications: string[] = [
   'Get Started with Cloud Native, DevOps, Agile, and NoSQL',
   'Front-End Development Capstone Project',
 ]
+
+export interface AiCertification {
+  title: string
+  issuer: string
+  href?: string
+}
+
+export const aiCertifications: AiCertification[] = [
+  {
+    title: 'Claude 101',
+    issuer: 'Anthropic Academy',
+    href: 'https://verify.skilljar.com/c/ytv8mpr7zbuj',
+  },
+]

@@ -30,12 +30,32 @@
         variant="outline"
       >View Full Certificate ↗</AppButton>
     </div>
+
+    <div class="flex justify-between items-start md:items-end mb-10 mt-20 flex-wrap gap-4">
+      <h2 class="font-display text-[clamp(2.5rem,5vw,4rem)] tracking-[0.04em] leading-none text-text">
+        AI <span class="text-accent">Certified</span>
+      </h2>
+      <div class="flex flex-col md:flex-row w-full md:w-auto justify-center md:justify-start items-center gap-[0.6rem] bg-bg border border-border px-4 py-2 rounded-[2px] font-mono text-[0.7rem] text-muted2 tracking-[0.06em]">
+        <span class="text-accent">Anthropic</span> Academy <span class="hidden md:inline">·</span> <span class="text-accent">2026</span>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-[repeat(auto-fill,minmax(280px,1fr))] gap-4">
+      <UiCertCard
+        v-for="(cert, i) in aiCertifications"
+        :key="i"
+        :title="cert.title"
+        :subtitle="cert.issuer"
+        :href="cert.href"
+        :index="i"
+      />
+    </div>
   </section>
 </template>
 
 <script setup lang="ts">
 import { useFadeIn } from '~/composables/useFadeIn'
-import { certifications } from '~/data/certifications'
+import { certifications, aiCertifications } from '~/data/certifications'
 
 const { el, visible } = useFadeIn()
 </script>
