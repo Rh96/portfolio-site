@@ -14,6 +14,6 @@ export const qa: QAItem[] = [
   },
   {
     question: 'What was your role in the team?',
-    answer: 'I was mainly focused on frontend development in React, implementing features, integrating APIs, improving UI/UX behavior, and collaborating closely with design and backend teams.',
+    answer: 'I was mainly focused on frontend development in Vue.js, implementing features, integrating APIs, improving UI/UX behavior, and collaborating closely with design and backend teams.',
   },
 ]
