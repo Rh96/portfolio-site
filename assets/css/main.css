@@ -6,10 +6,32 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  overflow-x: hidden;
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .cursor {
+    animation: none;
+  }
 }
 
+body {
+  overflow-x: hidden;
+  background: #0a0a0a;
+}
+
+html[data-mode='code'] body {
+  background: #0d1117;
+}
+
+/* --- Mode switching: both versions are in the static HTML, CSS shows one ---
+   data-mode is set on <html> by the inline script in nuxt.config.ts before first paint. */
+html[data-mode='code'] .mode-classic,
+html:not([data-mode='code']) .mode-code {
+  display: none;
+}
+
+/* Classic mode */
 @keyframes pulse {
   0%, 100% { opacity: 1; }
   50% { opacity: 0.4; }
@@ -19,10 +41,105 @@ body {
   animation: pulse 2s infinite;
 }
 
-/* Slider scrollbar hide */
 .scrollbar-none {
   scrollbar-width: none;
 }
 .scrollbar-none::-webkit-scrollbar {
   display: none;
+}
+
+/* Mode switch (shared by both navs) */
+.mode-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 4px;
+  background: none;
+  border: 0;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.mode-switch--classic { color: #888888; }
+.mode-switch--classic:hover { color: #e8ff47; }
+.mode-switch--code { color: #8b949e; }
+.mode-switch--code:hover { color: #09c269; }
+.mode-switch:focus-visible { outline: 2px solid #09c269; outline-offset: 2px; border-radius: 4px; }
+.mode-switch__track {
+  position: relative;
+  width: 34px;
+  height: 18px;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+}
+.mode-switch__thumb {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: currentColor;
+  transition: transform 0.2s, background-color 0.2s;
+}
+html[data-mode='code'] .mode-switch__thumb {
+  transform: translateX(16px);
+  background: #09c269;
+}
+@media (prefers-reduced-motion: reduce) {
+  .mode-switch__thumb { transition: none; }
+}
+
+
+/* Blinking terminal cursor next to the hero heading */
+.cursor {
+  display: inline-block;
+  width: 10px;
+  height: 1.05em;
+  background: #09c269;
+  vertical-align: text-bottom;
+  animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+/* Section content styles shared by every "window" */
+@layer components {
+  .bullets > li {
+    @apply relative pl-[22px] mb-2 text-[15px] text-c-tx;
+  }
+  .bullets > li::before {
+    content: '>';
+    @apply absolute left-0 text-c-grn font-semibold;
+  }
+  .chip {
+    @apply border border-c-line bg-c-bg text-c-blu px-[11px] py-[3px] rounded-full text-[12.5px];
+  }
+  .cell {
+    @apply bg-c-bg border border-c-line rounded-[10px] px-4 py-[14px];
+  }
+  .tag {
+    @apply float-right text-[11px] px-2 py-px rounded-full border border-c-grn text-c-grn;
+  }
+  .quote {
+    @apply border-l-[3px] border-c-grn px-[14px] py-2 bg-c-bg rounded-r-lg text-[14.5px] text-c-tx;
+  }
+}
+
+/* Short fade-in when a version becomes visible: runs on page load and when the mode switch
+   flips display:none -> block. Skipped for reduced-motion users. */
+@keyframes mode-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: none; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .mode-classic,
+  .mode-code {
+    animation: mode-in 250ms ease-out;
+  }
 }

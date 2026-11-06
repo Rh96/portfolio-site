@@ -1,6 +1,7 @@
 <template>
   <nav class="fixed top-0 left-0 right-0 z-50 flex justify-between items-center px-12 py-5 bg-bg/85 backdrop-blur-[12px] border-b border-border">
     <div class="font-display text-[1.4rem] tracking-[0.1em] text-accent">RH</div>
+    <div class="flex items-center gap-8">
     <ul class="hidden md:flex gap-8 list-none">
       <li v-for="link in links" :key="link.href">
         <a
@@ -9,6 +10,8 @@
         >{{ link.label }}</a>
       </li>
     </ul>
+    <ModeSwitch variant="classic" />
+    </div>
   </nav>
 </template>
 

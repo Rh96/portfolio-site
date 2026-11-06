@@ -9,6 +9,10 @@ export default defineNuxtConfig({
       title: 'Rade Hrgovikj – Frontend Developer',
       script: [
         {
+          // Runs before first paint so the saved mode shows without a flash (like a dark-mode switch).
+          innerHTML: `try{if(localStorage.getItem('portfolio-mode')==='code')document.documentElement.dataset.mode='code'}catch(e){}`,
+        },
+        {
           src: 'https://www.googletagmanager.com/gtag/js?id=G-241MEZKYL4',
           async: true,
         },
@@ -28,7 +32,7 @@ export default defineNuxtConfig({
         },
         {
           rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;500&display=swap',
+          href: 'https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;500;600;800&display=swap',
         },
         {
           rel: 'icon',

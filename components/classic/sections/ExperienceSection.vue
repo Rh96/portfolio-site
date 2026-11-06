@@ -1,6 +1,6 @@
 <template>
   <section id="experience" class="py-24 px-12 bg-bg">
-    <SectionLabel>03 / Experience</SectionLabel>
+    <ClassicSectionLabel>03 / Experience</ClassicSectionLabel>
     <h2 class="font-display text-[clamp(2.5rem,5vw,4rem)] tracking-[0.04em] leading-none mb-12 text-text">
       Work <span class="text-accent">History</span>
     </h2>

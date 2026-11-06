@@ -1,6 +1,6 @@
 <template>
   <section id="certifications" class="py-24 px-12 bg-surface">
-    <SectionLabel>06 / Certifications</SectionLabel>
+    <ClassicSectionLabel>06 / Certifications</ClassicSectionLabel>
     <div class="flex justify-between items-start md:items-end mb-10 flex-wrap gap-4">
       <h2 class="font-display text-[clamp(2.5rem,5vw,4rem)] tracking-[0.04em] leading-none text-text">
         IBM <span class="text-accent">Certified</span>
@@ -15,7 +15,7 @@
       class="grid grid-cols-[repeat(auto-fill,minmax(280px,1fr))] gap-4 transition-all duration-700 ease-out"
       :class="visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'"
     >
-      <UiCertCard
+      <ClassicUiCertCard
         v-for="(title, i) in certifications"
         :key="i"
         :title="title"
@@ -24,11 +24,11 @@
     </div>
 
     <div class="mt-8 text-center">
-      <AppButton
+      <ClassicAppButton
         href="https://coursera.org/share/ad6cdd162cbc4ff98ef97aac9c7b40ab"
         target="_blank"
         variant="outline"
-      >View Full Certificate ↗</AppButton>
+      >View Full Certificate ↗</ClassicAppButton>
     </div>
 
     <div class="flex justify-between items-start md:items-end mb-10 mt-20 flex-wrap gap-4">
@@ -41,7 +41,7 @@
     </div>
 
     <div class="grid grid-cols-[repeat(auto-fill,minmax(280px,1fr))] gap-4">
-      <UiCertCard
+      <ClassicUiCertCard
         v-for="(cert, i) in aiCertifications"
         :key="i"
         :title="cert.title"

@@ -1,6 +1,6 @@
 <template>
   <section id="qa" class="py-24 px-12 bg-bg">
-    <SectionLabel>02 / In My Own Words</SectionLabel>
+    <ClassicSectionLabel>02 / In My Own Words</ClassicSectionLabel>
     <h2 class="font-display text-[clamp(2.5rem,5vw,4rem)] tracking-[0.04em] leading-none mb-12 text-text">
       In My Own <span class="text-accent">Words</span>
     </h2>

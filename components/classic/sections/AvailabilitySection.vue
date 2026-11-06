@@ -15,9 +15,9 @@
     </p>
 
     <div class="flex gap-4 justify-center flex-wrap">
-      <AppButton href="mailto:radehrgo96@gmail.com" variant="primary">Get in Touch</AppButton>
-      <AppButton href="https://github.com/Rh96" target="_blank" variant="outline">GitHub ↗</AppButton>
-      <AppButton href="https://www.linkedin.com/in/rade-hrgovikj-032b28200" target="_blank" variant="outline">LinkedIn ↗</AppButton>
+      <ClassicAppButton href="mailto:radehrgo96@gmail.com" variant="primary">Get in Touch</ClassicAppButton>
+      <ClassicAppButton href="https://github.com/Rh96" target="_blank" variant="outline">GitHub ↗</ClassicAppButton>
+      <ClassicAppButton href="https://www.linkedin.com/in/rade-hrgovikj-032b28200" target="_blank" variant="outline">LinkedIn ↗</ClassicAppButton>
     </div>
   </section>
 </template>

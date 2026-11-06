@@ -1,6 +1,6 @@
 <template>
   <section id="features" class="py-24 px-12 bg-surface overflow-hidden">
-    <SectionLabel>05 / Featured Work</SectionLabel>
+    <ClassicSectionLabel>05 / Featured Work</ClassicSectionLabel>
     <h2 class="font-display text-[clamp(2.5rem,5vw,4rem)] tracking-[0.04em] leading-none mb-12 text-text">
       What I've <span class="text-accent">Worked On</span> 
     </h2>
@@ -24,7 +24,7 @@
         class="flex gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-none pb-4"
         :class="isGrabbing ? 'cursor-grabbing' : 'cursor-grab'"
       >
-        <UiFeatureCard v-for="card in features" :key="card.number" :card="card" />
+        <ClassicUiFeatureCard v-for="card in features" :key="card.number" :card="card" />
       </div>
       <div class="flex gap-2 mt-6">
         <button
