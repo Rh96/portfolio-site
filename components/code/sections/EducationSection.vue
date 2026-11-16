@@ -1,5 +1,5 @@
 <template>
-  <CodeUiWinFrame id="code-education" file="education.json" num="06" title="Education & recognition">
+  <CodeUiWinFrame id="code-education" file="education.json" num="05" title="Education & recognition">
     <p class="text-[13px] text-c-mut mb-[10px]">// education</p>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-[14px] mb-6">
       <div v-for="(item, i) in education" :key="i" class="cell">

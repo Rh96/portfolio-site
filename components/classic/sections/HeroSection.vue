@@ -16,17 +16,18 @@
       :class="leftVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'"
     >
       <div class="font-mono text-[0.7rem] text-accent tracking-[0.15em] uppercase mb-5 flex items-center gap-[0.8rem] before:content-[''] before:inline-block before:w-6 before:h-px before:bg-accent">
-        Frontend Developer
+        Senior Frontend Engineer
       </div>
       <h1 class="font-display text-[clamp(4rem,8vw,7.5rem)] leading-[0.92] tracking-[0.02em] text-text mb-1">
         Rade<br /><span class="text-accent">Hrgovikj</span>
       </h1>
       <div class="font-display text-[clamp(1.4rem,3vw,2.4rem)] tracking-[0.15em] text-muted2 mb-8">
-        Vue · React · React Native
+        Vue · TypeScript · React
       </div>
       <p class="text-[1rem] leading-[1.8] text-muted2 max-w-[460px] mb-10">
-        I build <strong class="text-text font-medium">pixel-perfect, responsive interfaces</strong> that bridge design and backend systems.
-        From complex booking calendars to real-time dashboards — I make the web feel <strong class="text-text font-medium">fast, fluid, and alive</strong>.
+        4+ years building production web apps, specializing in <strong class="text-text font-medium">Vue.js and TypeScript</strong>.
+        I own frontend features from requirements through release — real-time updates, scheduling, API integrations and
+        <strong class="text-text font-medium">complex product workflows</strong>.
       </p>
       <div class="flex gap-4 flex-wrap">
         <ClassicAppButton href="mailto:radehrgo96@gmail.com" variant="primary">Get in touch</ClassicAppButton>
@@ -67,11 +68,11 @@ const leftVisible = ref(false)
 const rightVisible = ref(false)
 
 const statusRows = [
-  { key: 'location', value: 'Skopje, North Macedonia' },
+  { key: 'location', value: 'Skopje, North Macedonia (CET)' },
   { key: 'experience', value: '4+ years frontend' },
-  { key: 'primary_stack', value: 'Vue.js · React · React Native' },
+  { key: 'primary_stack', value: 'Vue.js · TypeScript · React' },
   { key: 'languages', value: 'MK · EN (B2)' },
-  { key: 'work_mode', value: 'On-site · Hybrid · Remote' },
+  { key: 'work_mode', value: 'Remote · B2B · On-site · Hybrid' },
 ]
 
 onMounted(() => {

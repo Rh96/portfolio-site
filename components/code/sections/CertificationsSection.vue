@@ -1,5 +1,5 @@
 <template>
-  <CodeUiWinFrame id="code-certifications" file="certifications.md" num="05" title="Certifications">
+  <CodeUiWinFrame id="code-certifications" file="certifications.md" num="04" title="Certifications">
     <p class="text-[13px] text-c-mut mb-[10px]">// IBM Front-End Developer · Coursera · 2025</p>
     <ul class="bullets list-none p-0 m-0">
       <li v-for="title in certifications" :key="title">{{ title }}</li>

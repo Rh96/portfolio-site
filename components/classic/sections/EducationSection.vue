@@ -1,6 +1,6 @@
 <template>
   <section id="education" class="py-24 px-12 bg-bg">
-    <ClassicSectionLabel>07 / Background</ClassicSectionLabel>
+    <ClassicSectionLabel>06 / Background</ClassicSectionLabel>
     <h2 class="font-display text-[clamp(2.5rem,5vw,4rem)] tracking-[0.04em] leading-none mb-12 text-text">
       Education &amp; <span class="text-accent">Recognition</span>
     </h2>

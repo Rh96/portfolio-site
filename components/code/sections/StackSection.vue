@@ -1,11 +1,11 @@
 <template>
-  <CodeUiWinFrame id="code-stack" file="stack.json" num="03" title="Core stack" comment="what I reach for every day">
-    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-[14px] list-none p-0 m-0">
-      <li v-for="item in stack" :key="item.name" class="cell">
-        <span class="tag">{{ item.tag }}</span>
-        <b class="text-white"><span aria-hidden="true" class="mr-2">{{ item.icon }}</span>{{ item.name }}</b>
-      </li>
-    </ul>
+  <CodeUiWinFrame id="code-stack" file="stack.json" num="03" title="Core stack" comment="grouped the way my CV does: production vs project-based">
+    <div v-for="(group, i) in stack" :key="group.label" :class="i < stack.length - 1 ? 'mb-6' : ''">
+      <p class="text-[13px] text-c-mut mb-[10px]">// {{ group.label }} — {{ group.note }}</p>
+      <ul class="flex flex-wrap gap-2 list-none p-0 m-0">
+        <li v-for="item in group.items" :key="item" class="chip">{{ item }}</li>
+      </ul>
+    </div>
   </CodeUiWinFrame>
 </template>
 

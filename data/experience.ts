@@ -5,36 +5,26 @@ export interface ExperienceItem {
   location: string
   role: string
   bullets: string[]
-  current?: boolean
+  tech?: string
 }
 
 export const experience: ExperienceItem[] = [
   {
-    period: '02/2026 – 05/2026',
-    company: 'Quipu',
-    project: 'ProCredit Mobile Banking App',
-    location: '📍 Skopje, North Macedonia',
-    role: 'React Native Developer',
-    bullets: [
-      'Developed and maintained mobile applications using React Native for both Android and iOS.',
-      'Built reusable UI components and implemented responsive mobile interfaces.',
-      'Integrated REST APIs and optimized app performance across platforms.',
-      'Collaborated closely with designers and developers to ship features on time.',
-    ],
-  },
-  {
     period: '10/2021 – 12/2025',
     company: 'PlayerCoach',
-    project: 'Sports club management & booking platform',
+    project: 'Sports-coaching platform',
     location: '📍 Toronto, Canada (Remote)',
-    role: 'Frontend Developer (Vue JS / TypeScript)',
+    role: 'Frontend Developer',
     bullets: [
-      'Developed responsive, pixel-perfect frontend features including advanced form validation.',
-      'Maintained and updated packages with npm to ensure stability and compatibility.',
-      'Integrated new features in collaboration with design and backend teams.',
-      'Connected frontend with RESTful APIs for seamless data flow and UX.',
-      'Managed global application state using Vuex; implemented real-time updates with Socket.io.',
-      'Customized FullCalendar for court and practice booking systems.',
+      'Owned frontend delivery for a sports-coaching platform covering facility and court booking and practice scheduling, translating product requirements and designs into technical solutions and shipping features through to release.',
+      'Made technical and implementation decisions for frontend features, including component structure, state design and API integration, keeping complex booking workflows maintainable.',
+      "Built booking and practice scheduling on a customized FullCalendar, adapted to the platform's booking workflows, with real-time availability updates over Socket.io.",
+      'Contributed to the migration from Vue 2 and Vuex to Vue 3 and Pinia; managed application state and integrated the UI with REST APIs in coordination with backend developers.',
+      'Built multi-step forms with advanced client-side validation for complex sign-up and booking flows, and reusable components for responsive, cross-browser interfaces.',
+      'Applied lazy loading to field validation in complex forms to keep them responsive.',
+      'Wrote unit tests with Vitest and end-to-end tests with Cypress.',
+      'Debugged and resolved production issues in the FullCalendar-based booking system, and kept dependencies current to maintain application stability.',
     ],
+    tech: 'Vue 2/3, TypeScript, JavaScript, Vuex, Pinia, FullCalendar, Socket.io, REST APIs, Vitest, Cypress, CI/CD',
   },
 ]

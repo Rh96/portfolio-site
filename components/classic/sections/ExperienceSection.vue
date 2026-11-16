@@ -1,6 +1,6 @@
 <template>
   <section id="experience" class="py-24 px-12 bg-bg">
-    <ClassicSectionLabel>03 / Experience</ClassicSectionLabel>
+    <ClassicSectionLabel>02 / Experience</ClassicSectionLabel>
     <h2 class="font-display text-[clamp(2.5rem,5vw,4rem)] tracking-[0.04em] leading-none mb-12 text-text">
       Work <span class="text-accent">History</span>
     </h2>
@@ -18,10 +18,6 @@
           <div class="text-[0.85rem] text-accent2 font-medium mb-[0.2rem]">{{ job.company }}</div>
           <div v-if="job.project" class="font-mono text-[0.65rem] text-muted2 tracking-[0.06em] mb-[0.2rem]">{{ job.project }}</div>
           <div class="font-mono text-[0.65rem] text-muted tracking-[0.06em]">{{ job.location }}</div>
-          <div v-if="job.current" class="inline-flex items-center gap-[0.4rem] font-mono text-[0.62rem] text-accent tracking-[0.08em] uppercase mt-[0.6rem]">
-            <span class="w-[6px] h-[6px] rounded-full bg-accent animate-pulse-dot" />
-            Recent
-          </div>
         </div>
         <div>
           <div class="font-display text-[1.6rem] tracking-[0.05em] text-text mb-4">{{ job.role }}</div>
@@ -32,6 +28,7 @@
               class="text-[0.88rem] text-muted2 pl-5 relative leading-[1.6] before:content-['→'] before:absolute before:left-0 before:text-accent before:text-[0.75rem]"
             >{{ bullet }}</li>
           </ul>
+          <div v-if="job.tech" class="font-mono text-[0.68rem] text-muted tracking-[0.04em] mt-5 leading-[1.7]">{{ job.tech }}</div>
         </div>
       </div>
     </div>

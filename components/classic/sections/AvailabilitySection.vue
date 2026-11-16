@@ -10,8 +10,8 @@
     </h2>
 
     <p class="text-[0.95rem] text-muted2 max-w-[480px] mx-auto mb-10 leading-[1.7]">
-      Available for frontend roles — on-site, hybrid, or remote. Whether it's a Vue.js SPA, a React app,
-      a React Native mobile build, or a complex UI challenge, I'm ready to ship.
+      Available for international remote work and B2B collaboration, and open to on-site or hybrid frontend roles.
+      Whether it's a Vue.js SPA, a React app, or a complex UI challenge, I'm ready to ship.
     </p>
 
     <div class="flex gap-4 justify-center flex-wrap">

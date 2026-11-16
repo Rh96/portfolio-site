@@ -1,6 +1,6 @@
 <template>
   <section id="certifications" class="py-24 px-12 bg-surface">
-    <ClassicSectionLabel>06 / Certifications</ClassicSectionLabel>
+    <ClassicSectionLabel>05 / Certifications</ClassicSectionLabel>
     <div class="flex justify-between items-start md:items-end mb-10 flex-wrap gap-4">
       <h2 class="font-display text-[clamp(2.5rem,5vw,4rem)] tracking-[0.04em] leading-none text-text">
         IBM <span class="text-accent">Certified</span>

@@ -6,7 +6,10 @@ export default defineNuxtConfig({
     head: {
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1.0',
-      title: 'Rade Hrgovikj – Frontend Developer',
+      title: 'Rade Hrgovikj – Senior Frontend Engineer',
+      meta: [
+        { name: 'description', content: 'Senior Frontend Engineer specializing in Vue.js and TypeScript, with React and Next.js project experience. Available for international remote work and B2B collaboration.' },
+      ],
       script: [
         {
           // Runs before first paint so the saved mode shows without a flash (like a dark-mode switch).

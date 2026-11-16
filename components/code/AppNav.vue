@@ -16,10 +16,9 @@
 
 <script setup lang="ts">
 const links = [
-  { href: '#code-qa', label: 'about' },
   { href: '#code-experience', label: 'experience' },
+  { href: '#code-projects', label: 'projects' },
   { href: '#code-stack', label: 'stack' },
-  { href: '#code-features', label: 'work' },
   { href: '#code-certifications', label: 'certs' },
   { href: '#code-education', label: 'education' },
   { href: '#code-contact', label: 'contact' },

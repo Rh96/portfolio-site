@@ -17,10 +17,9 @@
 
 <script setup lang="ts">
 const links = [
-  { href: '#qa', label: 'About' },
   { href: '#experience', label: 'Experience' },
+  { href: '#projects', label: 'Projects' },
   { href: '#stack', label: 'Stack' },
-  { href: '#features', label: 'Work' },
   { href: '#certifications', label: 'Certs' },
   { href: '#education', label: 'Education' },
   { href: '#availability', label: 'Availability' },

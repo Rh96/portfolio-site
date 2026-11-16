@@ -4,10 +4,9 @@
     <ClassicAppNav />
     <main>
       <ClassicSectionsHeroSection />
-      <ClassicSectionsQASection />
       <ClassicSectionsExperienceSection />
+      <ClassicSectionsProjectsSection />
       <ClassicSectionsStackSection />
-      <ClassicSectionsFeaturesSection />
       <ClassicSectionsCertificationsSection />
       <ClassicSectionsEducationSection />
       <ClassicSectionsAvailabilitySection />
@@ -19,10 +18,9 @@
     <CodeAppNav />
     <main class="max-w-[960px] mx-auto px-4 pt-20">
       <CodeSectionsHeroSection />
-      <CodeSectionsQASection />
       <CodeSectionsExperienceSection />
+      <CodeSectionsProjectsSection />
       <CodeSectionsStackSection />
-      <CodeSectionsFeaturesSection />
       <CodeSectionsCertificationsSection />
       <CodeSectionsEducationSection />
       <CodeSectionsAvailabilitySection />
